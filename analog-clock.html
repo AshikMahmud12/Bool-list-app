@@ -22,7 +22,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="./index.html">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,15 +33,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-         
-               <li class="nav-item ">
+            <li class="nav-item">
               <a
                 class="nav-link text-warning font-weight-bold"
                 href="./analog-clock.html"
                 >Analog Clock
               </a>
             </li>
-               <li class="nav-item active">
+            <li class="nav-item active">
               <a
                 class="nav-link text-warning font-weight-bold"
                 href="./login-form.html"
@@ -53,45 +52,32 @@
       </div>
     </nav>
 
-    <div class="container mt-4">
-      <h1 class="display-4 text-center">
-        <i class="fas fa-book-open text-warning"></i> JSBangladesh<span
-          class="text-warning"
-        >
-          Book</span
-        >List
-      </h1>
-      <form id="book-form">
-        <div class="form-group">
-          <label for="title">Title</label>
-          <input type="text" id="title" class="form-control" />
-        </div>
-
-        <div class="form-group">
-          <label for="author">Author</label>
-          <input type="text" id="author" class="form-control" />
-        </div>
-
-        <div class="form-group">
-          <label for="year">Year</label>
-          <input type="text" id="year" class="form-control" />
-        </div>
-        <input
-          type="submit"
-          value="Add Book"
-          class="btn btn-warning btn-block"
-        />
-      </form>
-      <table class="table table-striped mt-5 text-center">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-        <tbody id="book-list"></tbody>
-      </table>
+    <div class="clock">
+      <div class="center-nut"></div>
+      <div class="center-nut2"></div>
+      <div class="indicators">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="sec-hand">
+        <div class="sec"></div>
+      </div>
+      <div class="min-hand">
+        <div class="min"></div>
+      </div>
+      <div class="hr-hand">
+        <div class="hr"></div>
+      </div>
     </div>
 
     <script
@@ -110,6 +96,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./asset/js/app.js"></script>
+    <script src="./asset/js/clock.js"></script>
   </body>
 </html>

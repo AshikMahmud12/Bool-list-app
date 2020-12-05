@@ -10,19 +10,15 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+
     <link rel="stylesheet" href="./asset/css/style.css" />
     <title>My BookList App</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="./index.html">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,7 +29,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-         
+        
                <li class="nav-item ">
               <a
                 class="nav-link text-warning font-weight-bold"
@@ -41,7 +37,7 @@
                 >Analog Clock
               </a>
             </li>
-               <li class="nav-item active">
+                <li class="nav-item active">
               <a
                 class="nav-link text-warning font-weight-bold"
                 href="./login-form.html"
@@ -53,47 +49,46 @@
       </div>
     </nav>
 
-    <div class="container mt-4">
-      <h1 class="display-4 text-center">
-        <i class="fas fa-book-open text-warning"></i> JSBangladesh<span
-          class="text-warning"
-        >
-          Book</span
-        >List
-      </h1>
-      <form id="book-form">
-        <div class="form-group">
-          <label for="title">Title</label>
-          <input type="text" id="title" class="form-control" />
+    <div class="bg-img">
+      <div class="content">
+        <header>Login Form</header>
+        <form action="#">
+          <div class="field">
+            <span class="fa fa-user"></span>
+            <input type="text" required placeholder="Email or Phone" />
+          </div>
+          <div class="field space">
+            <span class="fa fa-lock"></span>
+            <input
+              type="password"
+              class="pass-key"
+              required
+              placeholder="Password"
+            />
+            <span class="show">SHOW</span>
+          </div>
+          <div class="pass">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <div class="field">
+            <input type="submit" value="LOGIN" />
+          </div>
+        </form>
+        <div class="login">Or login with</div>
+        <div class="links">
+          <div class="facebook">
+            <i class="fab fa-facebook-f"><span>Facebook</span></i>
+          </div>
+          <div class="instagram">
+            <i class="fab fa-instagram"><span>Instagram</span></i>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="author">Author</label>
-          <input type="text" id="author" class="form-control" />
+        <div class="signup">
+          Don't have account?
+          <a href="#">Signup Now</a>
         </div>
-
-        <div class="form-group">
-          <label for="year">Year</label>
-          <input type="text" id="year" class="form-control" />
-        </div>
-        <input
-          type="submit"
-          value="Add Book"
-          class="btn btn-warning btn-block"
-        />
-      </form>
-      <table class="table table-striped mt-5 text-center">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-        <tbody id="book-list"></tbody>
-      </table>
+      </div>
     </div>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
